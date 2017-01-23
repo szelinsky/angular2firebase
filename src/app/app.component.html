@@ -1,3 +1,9 @@
 <h1>
   {{title}}
 </h1>
+<ul>
+  <li *ngFor="let cam of cams | async">
+    {{cam.$key}}: {{cam.$value}}
+
+  </li>
+</ul>
